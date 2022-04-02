@@ -1,7 +1,7 @@
 while True:
-    print("Enter a for one b for two c for three quotes. Enter x to exit.")
-    print("Enter m to go to main menu to select another choice.") 
-    switch = input()
+    print("#Enter a for one b for two c for three quotes. Enter x to exit.")
+    print("#Enter m to go to main menu to select another choice.") 
+    switch = input("#")
     if switch == "a":
         eng = {
     "a": "print",
