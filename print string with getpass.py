@@ -1,15 +1,80 @@
-import getpass
 eng = {
     "a": "print",
-    "b": '("',
-    "c": '")'
+    "b": "('",
+    "c": "')",
+    "d": '("',
+    "e": '")',
+    "f": "('''",
+    "g": "''')"
 }
-print("#Enter text. Enter x to exit.")
 while True:
-    text = getpass.getpass("")
-    if text == "x":
+    print("#Enter a for one b for two c for three quotes. Enter x to exit.")
+    print("#Enter ga, gb, gc to hide comments bettween strings")
+    print("#Enter m to go to main menu to select another choice.")
+    switch = input("#")
+    if switch == "a":
+        print("#Enter text.")
+        while True:
+            text = input("#")
+            if text == "m":
+                break
+            print(eng["a"] + eng["b"] + text + eng["c"])
+    elif switch == "b":
+        print("#enter text.")
+        while True:
+            text = input("#")
+            if text == "m":
+                break
+            print(eng["a"] + eng["d"] + text + eng["e"])
+    elif switch == "c":
+        print("#Enter text.")
+        while True:
+            text = input("#")
+            if text == "m":
+                break
+            print(eng["a"] + eng["f"] + text + eng["g"])
+    elif switch == "ga":
+        import getpass
+        print("#Enter text.")
+        while True:
+            text = getpass.getpass("")
+            if text == "m":
+                break
+            print(eng["a"] +  eng["b"]  +  text +  eng["c"])
+    elif switch == "gb":
+        import getpass
+        print("#Enter text.")
+        while True:
+            text = getpass.getpass("")
+            if text == "m":
+                break
+            print(eng["a"] + eng["d"] + text + eng["e"])
+    elif switch == "gc":
+        import getpass
+        print("#Enter text.")
+        while True:
+            text = getpass.getpass("")
+            if text == "m":
+                break
+            print(eng["a"] + eng["f"] + text + eng["g"])
+    elif switch == "x":
         break
-    print(eng["a"] +  eng["b"]  +  text +  eng["c"]) 
+            
+            
+        
+        
     
+ 
     
+        
+     
+   
     
+   
+        
+  
+        
+    
+
+            
+       
