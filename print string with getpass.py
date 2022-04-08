@@ -20,7 +20,7 @@ while True:
                 break
             print(eng["a"] + eng["b"] + text + eng["c"])
     elif switch == "b":
-        print("#enter text.")
+        print("#Enter text.")
         while True:
             text = input("#")
             if text == "m":
