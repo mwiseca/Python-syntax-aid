@@ -9,7 +9,7 @@ eng = {
 }
 while True:
     print("#Enter a for one b for two c for three quotes. Enter x to exit.")
-    print("#Enter ga, gb, gc to hide comments bettween strings.")
+    print("#Enter ga, gb, gc to hide comments between strings.")
     print("#Enter m to go to main menu to select another choice.")
     switch = input("#")
     if switch == "a":
