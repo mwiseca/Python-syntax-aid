@@ -10,6 +10,10 @@ eng = {
     "i": ":",
     "j": "    def __init__(self," ,
     "k": "):"
+    "l": "self.",
+     "m": "=",
+     "n": " ",
+     "o": "        ",
 }
 while True:
     print("#Enter a for one b for two c for three quotes. Enter x to exit.")
@@ -73,6 +77,11 @@ while True:
                 break
             print(eng["h"] + text + eng["i"] )
             print(eng["j"] + (te) + eng["k"])
+            
+            
+            
+            
+            
     elif switch == "x":
         break
             
