@@ -77,13 +77,25 @@ while True:
                 break
             print(eng["h"] + text + eng["i"] )
             print(eng["j"] + (te) + eng["k"])
-            
-            
-            
-            
-            
+            print(eng["o"] + eng["l"] +  v  +  eng["n"] + eng["m"] + eng["n"] + v )
+            print(eng["o"] + eng["l"] +  v1  +  eng["n"] + eng["m"] + eng["n"] + v1)
+            print(eng["o"] + eng["l"] +  v2  +  eng["n"] + eng["m"] + eng["n"] + v2)
+            print(eng["o"] + eng["l"] +  v3  +  eng["n"] + eng["m"] + eng["n"] + v3)
+            print(eng["o"] + eng["l"] +  v4  +  eng["n"] + eng["m"] + eng["n"] + v4)    
+            print(eng["o"] + eng["l"] +  v5  +  eng["n"] + eng["m"] + eng["n"] + v5)
+            print(eng["o"] + eng["l"] +  v6  +  eng["n"] + eng["m"] + eng["n"] + v6)
+            print(eng["o"] + eng["l"] +  v7  +  eng["n"] + eng["m"] + eng["n"] + v7)
     elif switch == "x":
         break
+        
+     
+     
+            
+            
+            
+            
+            
+    
             
             
             
