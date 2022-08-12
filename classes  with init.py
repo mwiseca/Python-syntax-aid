@@ -11,11 +11,11 @@ eng = {
 while True:    
     print("#Enter a class")
     text = input("#")
-    if text == "m":
+    if text == "x":
         break
     print("#List attributes.")
     te = input("#")
-    if te == "m":
+    if te == "x":
         break
     print("#Assign values. One then press enter.")    
     v = input("#1")
