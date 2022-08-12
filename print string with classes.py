@@ -72,7 +72,7 @@ while True:
             text = input("#")
             if text == "m":
                 break
-            te = input("#")
+            te = input("#List attributes.")
             if te == "m":
                 break
             print("#Assign values. One then press enter.")    
