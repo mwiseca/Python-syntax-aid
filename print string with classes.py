@@ -9,11 +9,11 @@ eng = {
     "h": "class ",
     "i": ":",
     "j": "    def __init__(self," ,
-    "k": "):"
+    "k": "):",
     "l": "self.",
-     "m": "=",
-     "n": " ",
-     "o": "        ",
+    "m": "=",
+    "n": " ",
+    "o": "        "
 }
 while True:
     print("#Enter a for one b for two c for three quotes. Enter x to exit.")
