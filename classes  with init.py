@@ -24,7 +24,7 @@ while True:
     v3 = input("#4")
     v4 = input("#5")
     v5 = input("#6")
-    v6 =input("#7")
+    v6 = input("#7")
     v7 = input("#8")
     print(eng["h"] + text + eng["i"] )
     print(eng["j"] + (te) + eng["k"])
