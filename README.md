@@ -6,3 +6,6 @@ with print functions. Make all the strings you need copy and paste them
 below your program cut and paste into program as needed.
 To hide comments use the getpass one. I added another file that
 allows you to choose between on two or three quote strings.
+classes were added on august 4 2022. A new file with if statments with equality operator
+was added on september 1 2022. This can be used to help learn a multimodal text editor
+by copying code to it and cutting and pasting to were wanted.
