@@ -30,7 +30,7 @@ def ch():
 
 ch()
 while True:
-    print("m for main 0 for choices x to exit.")
+    print("#m for main 0 for choices x to exit.")
     switch = input("#")
     if switch == "a":
         print("#Enter text.")
