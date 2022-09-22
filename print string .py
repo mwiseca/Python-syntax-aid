@@ -1,4 +1,8 @@
-while True:
+#Copyright 2022 Mitchell E Wise
+#SPDX-License-Identifier: Apache-2.0
+
+
+    while True:
     print("#Enter a for one b for two c for three quotes. Enter x to exit.")
     print("#Enter m to go to main menu to select another choice.") 
     switch = input("#")
