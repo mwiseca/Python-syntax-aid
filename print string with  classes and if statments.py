@@ -1,4 +1,4 @@
-#Copyright 2022 Mitchell e wise
+#Copyright 2022 Mitchell E Wise
 #SPDX-License-Identifier: Apache-2.0
 
 
