@@ -1,4 +1,4 @@
-#Copyright [yyyy] [name of copyright owner]
+#Copyright 2022 Mitchell e wise
 #SPDX-License-Identifier: Apache-2.0
 
 
