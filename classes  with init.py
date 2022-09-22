@@ -1,3 +1,5 @@
+#Copyright 2022 Mitchell E Wise
+#SPDX-License-Identifier: Apache-2.0
 
 
 eng = {
