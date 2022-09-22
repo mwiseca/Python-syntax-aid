@@ -1,3 +1,7 @@
+#Copyright [yyyy] [name of copyright owner]
+#SPDX-License-Identifier: Apache-2.0
+
+
 eng = {
     "a": "print",
     "b": "('",
@@ -25,6 +29,7 @@ def ch():
     print("#Enter ga, gb, gc to hide comments between strings.")
     print("#Enter cl for classes.")
     print("#Enter i for if statment with equality operator e for elif.")
+    print("#Quotes must be used for values on if elif statments if its a string.")
     print("#Enter m to go to main menu to select another choice.")
     
 
@@ -129,7 +134,7 @@ while True:
             if text == "m":
                 break
             te = input("#Enter a value.")
-            ts = input("##Enter s if you want the second line to be a print string. Enter for other. ")
+            ts = input("#Enter s if you want the second line to be a print string. Enter for other.")
             t = input("#Enter the second line. ")
             print(eng["t"] + text + eng["q"] +te + eng["r"])
             if ts == "s":
