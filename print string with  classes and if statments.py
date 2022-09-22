@@ -1,3 +1,6 @@
+#Copyright 2022 Mitchell E Wise
+#SPDX-License-Identifier: Apache-2.0
+
 eng = {
     "a": "print",
     "b": "('",
@@ -25,6 +28,7 @@ while True:
     print("#Enter ga, gb, gc to hide comments between strings.")
     print("#Enter cl for classes.")
     print("#Enter i for if statment with equality operator e for elif.")
+    print("#Quotes must be used for values on if elif statments if its a string.")       
     print("#Enter m to go to main menu to select another choice.")     
     switch = input("#")
     if switch == "a":
