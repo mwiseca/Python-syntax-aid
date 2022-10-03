@@ -118,7 +118,7 @@ while True:
             if text == "m":
                 break
             te = input("#Enter a value. ")
-            ts = input("#Enter s to make next line a string with print function. Enter for other. ")
+            ts = input("#Enter s to make the next line a string with print function. Enter for other. ")
             t = input("#Enter the second line. ")
             print(eng["p"] + text + eng["q"] + te + eng["r"])
             if ts == "s":
@@ -134,7 +134,7 @@ while True:
             if text == "m":
                 break
             te = input("#Enter a value.")
-            ts = input("#Enter s make next line a string with print function. Enter for other. ")
+            ts = input("#Enter s make the next line a string with print function. Enter for other. ")
             t = input("#Enter the second line. ")
             print(eng["t"] + text + eng["q"] +te + eng["r"])
             if ts == "s":
