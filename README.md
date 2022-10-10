@@ -8,4 +8,5 @@ To hide comments use the getpass one. I added another file that
 allows you to choose between on two or three quote strings.
 classes were added on august 4 2022. A new file with if statments with equality operator
 was added on september 1 2022. This can be used to help learn a multimodal text editor
-by copying code to it and cutting and pasting to were wanted.
+by copying code to it and cutting and pasting to were wanted. Variables were added on October 10 2002.
+There is a option to use the input function with it.
