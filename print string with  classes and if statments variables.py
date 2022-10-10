@@ -150,7 +150,7 @@ while True:
                 print(eng["s"] + t)
     elif switch == "v":
         while True:
-            print("Enter a name for your variable.")
+            print("#Enter a name for your variable.")
             n = input("#")
             if n == "m":
                 break
