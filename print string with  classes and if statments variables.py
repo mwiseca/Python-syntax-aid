@@ -30,7 +30,7 @@ eng = {
 }
 def ch():
     print("#Enter a for one b for two c for three quotes.  Enter x to exit.")
-    print("#Enter ga, gb, gc to hide comments between strings.")
+    print("#Enter ga, gb, gc to hide comments between strings while using in terminal.")
     print("#Enter cl for classes.")
     print("#Enter i for if statment with equality operator e for elif.")
     print("#Quotes must be used for values on if elif statments if its a string.")
