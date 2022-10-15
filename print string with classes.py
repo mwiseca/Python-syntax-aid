@@ -21,7 +21,7 @@ eng = {
 }
 while True:
     print("#Enter a for one b for two c for three quotes. Enter x to exit.")
-    print("#Enter ga, gb, gc to hide comments between strings.")
+    print("#Enter ga, gb, gc to hide comments between strings while using in the terminal.")
     print("#Enter cl for classes.")
     print("#Enter m to go to main menu to select another choice.")
     switch = input("#")
