@@ -1,4 +1,4 @@
-# print-string
+# Write strings classes with init if statments and variables in python.
 Make a python string with print function by typing text only.
 This program allows you to make a string with print function
 just with text. Its most useful if you have alot of strings 
