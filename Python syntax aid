@@ -93,7 +93,7 @@ while True:
             text = input("#")
             if text == "m":
                 break
-            print("#List attributes.")
+            print("#List attributes with a comma separating each one.")
             te = input("#")
             if te == "m":
                 break
