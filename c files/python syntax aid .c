@@ -18,7 +18,7 @@ int main(){
     char sw [250];
  choice();
  while (1){ 
- printf("#Enter m for main x to exit c for choices\n");
+ printf("#Enter m for main x to exit ch for choices\n");
  printf("#");
  fgets(sw,250,stdin);
  sw[strcspn(sw,"\n")]=0;
