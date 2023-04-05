@@ -8,7 +8,7 @@
 void choice(){
 printf("#Enter a for one b for two c for three quotes.  Enter x to exit.\n");
 printf("#Enter cl for classes. Enter i for if statments. Enter e for elif.\n");
-printf("#Enter v for variables and user input option.\n);
+printf("#Enter v for variables and user input option.\n");
 printf("#Enter ch for choices.\n");
 printf("#Enter m to go to main menu to select another choice.\n");                                                   
 }
