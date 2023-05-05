@@ -3,3 +3,5 @@ The python one is recomended for use as im just starting out in c.
 April 4 2023.
 Python syntax aid that clears input buffer was added. Works with some compilers.
 May 2 2023.
+Python syntax aid with __fpurge(stdin); was added. it will clear input buffers other operating systems.
+May 5 2023.
