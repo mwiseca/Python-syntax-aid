@@ -1,7 +1,8 @@
 Python syntax aid in c was added.
 The python one is recomended for use as im just starting out in c.
 April 4 2023.
-Python syntax aid that clears input buffer was added. Works with some compilers.
+Python syntax aid with fflush(stdin);was added clears input buffer  with some compilers.
 May 2 2023.
-Python syntax aid with __fpurge(stdin); was added. it will clear input buffers other operating systems.
+Python syntax aid with __fpurge(stdin); was added. it will clear input buffers some other compilers.
 May 5 2023.
+The above files will work on different compilers if none work use the regular Python syntax aid.
