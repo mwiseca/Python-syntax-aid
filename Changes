@@ -6,3 +6,5 @@ May 2 2023.
 Python syntax aid with __fpurge(stdin); was added. it will clear input buffers some other compilers.
 May 5 2023.
 The above files will work on different compilers if none work use the regular Python syntax aid.
+Classes.c was added,a stand alone classes file.
+June 2 2003.
