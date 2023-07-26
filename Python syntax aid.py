@@ -29,7 +29,7 @@ eng = {
     "x": " "
 }
 def ch():
-    print("#Enter a for one b for two c for three quotes.  Enter x to exit.")
+    print("# For strings enter a for one b for two c for three quotes.  Enter x to exit.")
     print("#Enter ga, gb, gc to hide comments between strings while using in the terminal.")
     print("#Enter cl for classes.")
     print("#Enter i for if statment with equality operator e for elif.")
