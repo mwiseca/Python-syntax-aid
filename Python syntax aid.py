@@ -89,7 +89,7 @@ while True:
             print(eng["a"] + eng["f"] + text + eng["g"])
     elif switch == "cl":
         while True:    
-            print("#Enter a class")
+            print("#Enter a class m for main.")
             text = input("#")
             if text == "m":
                 break
