@@ -10,6 +10,6 @@ The C file must be compiled before use.
 
 To Use:
 Select strings classes if statments or varables from choices.
-If b is choosen type only the text, print("-----") will be added.
+If b is chosen type only the text, print("-----") will be added.
 Type m to go to main to select another choice. 
 The x to exit feature works in main.
