@@ -7,7 +7,7 @@
 
 void choice(){
 printf("#For strings enter a for one b for two c for three quotes. Enter x to exit.\n");
-printf("#Enter cl for classes. Enter i for if statments. Enter e for elif.\n");
+printf("#Enter cl for classes. Enter i for if statements. Enter e for elif.\n");
 printf("#Enter v for variables and user input option.\n");
 printf("#Enter ch for choices.\n");
 printf("#Enter m to go to main menu to select another choice.\n");                                                   
@@ -120,7 +120,7 @@ char f [5] [12] = {"if ", " == ", ":","    print(\"", "\")"};
  char ts [2000];
  char t [2000];
  while (1){
- printf("#Enter name of if statment. ");
+ printf("#Enter name of if statement. ");
  fgets(text,2000,stdin);
  text[strcspn(text,"\n")]=0;
  if (strcmp(text,"m")==0){
@@ -148,7 +148,7 @@ char f [5] [12] = {"elif ", " == ", ":","    print(\"", "\")"};
  char ts [2000];
  char t [2000];
  while (1){
- printf("#Enter name of elif statment. ");
+ printf("#Enter name of elif statement. ");
  fgets(text,2000,stdin);
  text[strcspn(text,"\n")]=0;
  if (strcmp(text,"m")==0){
