@@ -32,7 +32,7 @@ def ch():
     print("#For strings enter a for one b for two c for three quotes.  Enter x to exit.")
     print("#Enter ga, gb, gc to hide comments between strings while using in the terminal.")
     print("#Enter cl for classes.")
-    print("#Enter i for if statment with equality operator e for elif.")
+    print("#Enter i for if statement with equality operator e for elif.")
     print("#Quotes must be used for values on if elif statments if its a string.")
     print("#Enter v for variables and with input function.")
     print("#Enter m to go to main menu to select another choice.")
@@ -118,7 +118,7 @@ while True:
             print(eng["o"] + eng["l"] +  v7  +  eng["n"] + eng["m"] + eng["n"] + v7)
     elif switch == "i":
         while True:    
-            print("#Enter name of if statment.")
+            print("#Enter name of if statement.")
             text = input("#")
             if text == "m":
                 break
