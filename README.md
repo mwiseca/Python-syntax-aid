@@ -2,8 +2,8 @@
 Make python strings if elif statements variables and classes with init.
 Strings have the print function. One 2 or 3 quotes can be selected.
 Variables have a option for user input.
-This can be used to check syntax or copyied and pasted to a Python file.
-On May 6 2023, Python syntax aid in C was added. It is recomended the 
+This can be used to check syntax or copied and pasted to a Python file.
+On May 6 2023, Python syntax aid in C was added. It is recommended the 
 Python file is used as it has more features. The python file has getpass
 to hide user input.
 The C file must be compiled before use.
