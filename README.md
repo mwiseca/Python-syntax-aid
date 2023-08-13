@@ -9,7 +9,7 @@ to hide user input.
 The C file must be compiled before use.
 
 **To Use:**
-Select strings classes if statements or varables from choices.
+Select strings classes if statements or variables from choices.
 If b is chosen type only the text, print("-----") will be added.
 Type m to go to main to select another choice. 
 The x to exit feature works in main.
