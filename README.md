@@ -1,6 +1,6 @@
 # Write strings classes with init if statements and variables in Python.
 Make python strings if elif statements variables and classes with init.
-Strings have the print function. One 2 or 3 quotes can be selected.
+Strings have the print function. 1,2 or 3 quotes can be selected.
 Variables have a option for user input.
 This can be used to check syntax or copied and pasted to a Python file.
 On May 6 2023, Python syntax aid in C was added. It is recommended the 
