@@ -33,7 +33,7 @@ def ch():
     print("#Enter ga, gb, gc to hide comments between strings while using in the terminal.")
     print("#Enter cl for classes.")
     print("#Enter i for if statement with equality operator e for elif.")
-    print("#Quotes must be used for values on if elif statments if its a string.")
+    print("#Quotes must be used for values on if elif statements if its a string.")
     print("#Enter v for variables and with input function.")
     print("#Enter m to go to main menu to select another choice.")
     
