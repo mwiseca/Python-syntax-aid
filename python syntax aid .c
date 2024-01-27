@@ -1,4 +1,4 @@
-//Copyright 2023 Mitchell E Wise 
+//Copyright 2023 2024 Mitchell E Wise 
 //SPDX-License-Identifier: Apache-20 
 
 
@@ -10,6 +10,7 @@ printf("#For strings enter a for one b for two c for three quotes. Enter x to ex
 printf("#Enter cl for classes. Enter i for if statements. Enter e for elif.\n");
 printf("#Enter v for variables and user input option.\n");
 printf("#Enter ch for choices.\n");
+printf("#Enter cy for what's needed to copy and paste to finish a simple program.\n");
 printf("#Enter m to go to main menu to select another choice.\n");                                                   
 }
 
@@ -33,7 +34,7 @@ int main(){
  text[strcspn(text,"\n")]=0;
  if (strcmp(text,"m")==0){
  break;}
- printf("%s%s%s\n",string[0],text,string[1]);
+ printf("\n%s%s%s\n\n",string[0],text,string[1]);
  }
 }else if (strcmp(sw, "b")==0){
  char string  [2] [15] = {"print(\"", "\")"};
@@ -45,7 +46,7 @@ int main(){
  text[strcspn(text,"\n")]=0;
  if (strcmp(text,"m")==0){
  break;}
- printf("%s%s%s\n",string[0],text,string[1]);
+ printf("\n%s%s%s\n\n",string[0],text,string[1]);
  }    
 }else if (strcmp(sw, "c")==0){
   char string  [2] [15] = {"print('''",  "''')"};
@@ -57,7 +58,7 @@ int main(){
  text[strcspn(text,"\n")]=0;
  if (strcmp(text,"m")==0){
  break;}
- printf("%s%s%s\n",string[0],text,string[1]);
+ printf("\n%s%s%s\n\n",string[0],text,string[1]);
  }
 }else if (strcmp(sw, "x")==0){
  break;
@@ -102,7 +103,7 @@ int main(){
  printf("#");
  fgets(v7,2000,stdin);
  v7[strcspn(v7,"\n")]=0;
- printf("%s%s%s\n",f[0],text,f[1]);
+ printf("\n%s%s%s\n",f[0],text,f[1]);
  printf("%s%s%s\n",f[2], te, f[3]);
  printf("%s%s%s%s%s%s%s\n",f[7],f[4],v,f[6],f[5],f[6],v);
  printf("%s%s%s%s%s%s%s\n",f[7],f[4],v1,f[6],f[5],f[6],v1);
@@ -111,7 +112,7 @@ int main(){
  printf("%s%s%s%s%s%s%s\n",f[7],f[4],v4,f[6],f[5],f[6],v4);
  printf("%s%s%s%s%s%s%s\n",f[7],f[4],v5,f[6],f[5],f[6],v5);
  printf("%s%s%s%s%s%s%s\n",f[7],f[4],v6,f[6],f[5],f[6],v6);
- printf("%s%s%s%s%s%s%s\n",f[7],f[4],v7,f[6],f[5],f[6],v7);
+ printf("%s%s%s%s%s%s%s\n\n",f[7],f[4],v7,f[6],f[5],f[6],v7);
  }
 }else if (strcmp(sw, "i")==0){
 char f [5] [12] = {"if ", " == ", ":","    print(\"", "\")"};
@@ -134,11 +135,11 @@ char f [5] [12] = {"if ", " == ", ":","    print(\"", "\")"};
  printf("#Enter the second line. ");
  fgets(t,2000,stdin);
  t[strcspn(t,"\n")]=0;
- printf("%s%s%s%s%s\n",f[0],text,f[1],te,f[2]);
+ printf("\n%s%s%s%s%s\n",f[0],text,f[1],te,f[2]);
  if (strcmp(ts,"s")==0){
- printf("%s%s%s\n",f[3],t,f[4]);
+ printf("%s%s%s\n\n",f[3],t,f[4]);
 }else{
-      printf("    %s\n",t);
+      printf("    %s\n\n",t);
            }
       }
 }else if (strcmp(sw, "e")==0){      
@@ -162,11 +163,11 @@ char f [5] [12] = {"elif ", " == ", ":","    print(\"", "\")"};
  printf("#Enter the second line. ");
  fgets(t,2000,stdin);
  t[strcspn(t,"\n")]=0;
- printf("%s%s%s%s%s\n",f[0],text,f[1],te,f[2]);
+ printf("\n%s%s%s%s%s\n",f[0],text,f[1],te,f[2]);
  if (strcmp(ts,"s")==0){
- printf("%s%s%s\n",f[3],t,f[4]);
+ printf("%s%s%s\n\n",f[3],t,f[4]);
 }else{
-      printf("    %s\n",t);
+      printf("    %s\n\n",t);
            }
       } 
 }else if (strcmp(sw, "v")==0){
@@ -190,13 +191,26 @@ char f [5] [12] = {"elif ", " == ", ":","    print(\"", "\")"};
  fgets(v,2000,stdin);
  v[strcspn(v,"\n")]=0;
  if (strcmp(vs,"s")==0){
- printf("%s%s%s%s%s\n",n,f[0],f[1],v,f[1]);
+ printf("\n%s%s%s%s%s\n\n",n,f[0],f[1],v,f[1]);
 }else if (strcmp(vs,"i")==0){
- printf("%s%s%s%s%s\n",n,f[0],f[2],v,f[3]);                                                   
+ printf("\n%s%s%s%s%s\n\n",n,f[0],f[2],v,f[3]);                                                   
 }else{
-     printf("%s%s%s\n",n,f[0],v);
+     printf("\n%s%s%s\n\n",n,f[0],v);
            }
      }
+}else if (strcmp(sw, "cy")==0){
+ char cpy [5];
+ while (1){
+ printf("\nwhile True:\n");
+ printf("\nbreak\n");
+ printf("\ncontinue\n\n");
+ printf("\nelse:\n\n");
+ printf("#Enter m for main.\n");
+ fgets(cpy,5,stdin);
+ cpy[strcspn(cpy,"\n")]=0;
+ if (strcmp(cpy,"m")==0){
+ break;}
+ } 
 }else if (strcmp(sw, "ch")==0){
  choice();
 }else{
