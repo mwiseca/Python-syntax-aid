@@ -33,7 +33,7 @@ def ch():
     print("#Enter ga, gb, gc to hide comments between strings while using in the terminal.")
     print("#Enter cl for classes.")
     print("#Enter i for if statement with equality operator e for elif.")
-    print("#Quotes must be used for values on if elif statements if its a string.")
+    print("#Quotes must be used for values on if elif statements if it's a string.")
     print("#Enter v for variables and with input function.")
     print("#Enter ch for choices.")
     print("#Enter cy for what's needed to copy and paste to finish a simple program.")
@@ -124,7 +124,7 @@ while True:
             text = input("#")
             if text == "m":
                 break
-            te = input("#Enter a value. Add quotes if its a string. ")
+            te = input("#Enter a value. Add quotes if it's a string. ")
             ts = input("#Enter s to make the next line a string with print function. Enter for other. ")
             t = input("#Enter the second line. ")
             print("\n" + eng["p"] + text + eng["q"] + te + eng["r"])
@@ -140,7 +140,7 @@ while True:
             text = input("#")
             if text == "m":
                 break
-            te = input("#Enter a value. Add quotes if its a string.")
+            te = input("#Enter a value. Add quotes if it's a string.")
             ts = input("#Enter s make the next line a string with print function. Enter for other. ")
             t = input("#Enter the second line. ")
             print("\n" + eng["t"] + text + eng["q"] +te + eng["r"])
