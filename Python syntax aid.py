@@ -1,4 +1,4 @@
-#Copyright 2022-2023 Mitchell E Wise
+#Copyright 2022-2024 Mitchell E Wise
 #SPDX-License-Identifier: Apache-2.0
 
 
@@ -35,12 +35,14 @@ def ch():
     print("#Enter i for if statement with equality operator e for elif.")
     print("#Quotes must be used for values on if elif statements if its a string.")
     print("#Enter v for variables and with input function.")
+    print("#Enter ch for choices.")
+    print("#Enter cy for what's needed to copy and paste to finish a simple program.")
     print("#Enter m to go to main menu to select another choice.")
     
 
 ch()
 while True:
-    print("#Enter m for main 0 for choices x to exit.")
+    print("#Enter m for main ch for choices x to exit.")
     switch = input("#")
     if switch == "a":
         print("#Enter text.")
@@ -48,21 +50,21 @@ while True:
             text = input("#")
             if text == "m":
                 break
-            print(eng["a"] + eng["b"] + text + eng["c"])
+            print("\n" + eng["a"] + eng["b"] + text + eng["c"] + "\n")
     elif switch == "b":
         print("#Enter text.")
         while True:
             text = input("#")
             if text == "m":
                 break
-            print(eng["a"] + eng["d"] + text + eng["e"])
+            print("\n" + eng["a"] + eng["d"] + text + eng["e"] + "\n")
     elif switch == "c":
         print("#Enter text.")
         while True:
             text = input("#")
             if text == "m":
                 break
-            print(eng["a"] + eng["f"] + text + eng["g"])
+            print("\n" + eng["a"] + eng["f"] + text + eng["g"] + "\n")
     elif switch == "ga":
         import getpass
         print("#Enter text.")
@@ -106,7 +108,7 @@ while True:
             v5 = input("#6")
             v6 =input("#7")
             v7 = input("#8")
-            print(eng["h"] + text + eng["i"] )
+            print("\n" + eng["h"] + text + eng["i"] )
             print(eng["j"] + (te) + eng["k"])
             print(eng["o"] + eng["l"] +  v  +  eng["n"] + eng["m"] + eng["n"] + v )
             print(eng["o"] + eng["l"] +  v1  +  eng["n"] + eng["m"] + eng["n"] + v1)
@@ -115,7 +117,7 @@ while True:
             print(eng["o"] + eng["l"] +  v4  +  eng["n"] + eng["m"] + eng["n"] + v4)    
             print(eng["o"] + eng["l"] +  v5  +  eng["n"] + eng["m"] + eng["n"] + v5)
             print(eng["o"] + eng["l"] +  v6  +  eng["n"] + eng["m"] + eng["n"] + v6)
-            print(eng["o"] + eng["l"] +  v7  +  eng["n"] + eng["m"] + eng["n"] + v7)
+            print(eng["o"] + eng["l"] +  v7  +  eng["n"] + eng["m"] + eng["n"] + v7 + "\n")
     elif switch == "i":
         while True:    
             print("#Enter name of if statement.")
@@ -125,13 +127,13 @@ while True:
             te = input("#Enter a value. Add quotes if its a string. ")
             ts = input("#Enter s to make the next line a string with print function. Enter for other. ")
             t = input("#Enter the second line. ")
-            print(eng["p"] + text + eng["q"] + te + eng["r"])
+            print("\n" + eng["p"] + text + eng["q"] + te + eng["r"])
             if ts == "s":
                 print(eng["s"] + eng["a"] + eng["d"] + t  + eng["e"])
                 print(" ")
                 break
             else:
-                print(eng["s"] + t)
+                print(eng["s"] + t + "\n")
     elif switch == "e":
         while True:    
             print("#Enter name.")
@@ -141,13 +143,13 @@ while True:
             te = input("#Enter a value. Add quotes if its a string.")
             ts = input("#Enter s make the next line a string with print function. Enter for other. ")
             t = input("#Enter the second line. ")
-            print(eng["t"] + text + eng["q"] +te + eng["r"])
+            print("\n" + eng["t"] + text + eng["q"] +te + eng["r"])
             if ts == "s":
                 print(eng["s"] + eng["a"] + eng["d"] + t  + eng["e"])
                 print(" ")
                 break
             else:
-                print(eng["s"] + t)
+                print(eng["s"] + t + "\n")
     elif switch == "v":
         while True:
             print("#Enter a name for your variable.")
@@ -158,15 +160,34 @@ while True:
             vs = input("#")
             v = input("#Enter a value. ")
             if vs == "s":
-                print(n + eng["u"] + eng["v"] + v + eng["v"])
+                print("\n" + n + eng["u"] + eng["v"] + v + eng["v"] + "\n")
             elif vs == "i":
-                print(n + eng["u"] + eng["w"] + v +  eng["x"] + eng["e"])
+                print("\n" + n + eng["u"] + eng["w"] + v +  eng["x"] + eng["e"] + "\n")
             else:
-                print(n +  eng["u"] + v)
-    elif switch == "0":
+                print("\n" + n +  eng["u"] + v + "\n")
+    elif switch == "cy":
+        while True:
+            print("\nwhile True:\n")
+            print("\nbreak\n")
+            print("\ncontinue\n")
+            print("\nelse:\n")
+            print("#Enter m for main.")
+            cpy = input("//")
+            if cpy == "m":
+                break
+    elif switch == "ch":
         ch()
     elif switch == "x":
         break    
+
+
+
+
+
+
+
+
+
     
 
 
