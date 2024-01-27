@@ -45,21 +45,21 @@ while True:
     print("#Enter m for main ch for choices x to exit.")
     switch = input("#")
     if switch == "a":
-        print("#Enter text.")
+        print("#Enter text, m for main.")
         while True:
             text = input("#")
             if text == "m":
                 break
             print("\n" + eng["a"] + eng["b"] + text + eng["c"] + "\n")
     elif switch == "b":
-        print("#Enter text.")
+        print("#Enter text, m for main.")
         while True:
             text = input("#")
             if text == "m":
                 break
             print("\n" + eng["a"] + eng["d"] + text + eng["e"] + "\n")
     elif switch == "c":
-        print("#Enter text.")
+        print("#Enter text, m for main.")
         while True:
             text = input("#")
             if text == "m":
@@ -67,7 +67,7 @@ while True:
             print("\n" + eng["a"] + eng["f"] + text + eng["g"] + "\n")
     elif switch == "ga":
         import getpass
-        print("#Enter text.")
+        print("#Enter text, m for main.")
         while True:
             text = getpass.getpass("")
             if text == "m":
@@ -75,7 +75,7 @@ while True:
             print(eng["a"] +  eng["b"]  +  text +  eng["c"])
     elif switch == "gb":
         import getpass
-        print("#Enter text.")
+        print("#Enter text, m for main.")
         while True:
             text = getpass.getpass("")
             if text == "m":
@@ -91,7 +91,7 @@ while True:
             print(eng["a"] + eng["f"] + text + eng["g"])
     elif switch == "cl":
         while True:    
-            print("#Enter a class m for main.")
+            print("#Enter a class, m for main.")
             text = input("#")
             if text == "m":
                 break
@@ -136,7 +136,7 @@ while True:
                 print(eng["s"] + t + "\n")
     elif switch == "e":
         while True:    
-            print("#Enter name.")
+            print("#Enter name, m for main.")
             text = input("#")
             if text == "m":
                 break
@@ -152,7 +152,7 @@ while True:
                 print(eng["s"] + t + "\n")
     elif switch == "v":
         while True:
-            print("#Enter a name for your variable.")
+            print("#Enter a name for your variable, m for main.")
             n = input("#")
             if n == "m":
                 break
