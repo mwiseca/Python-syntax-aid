@@ -83,7 +83,7 @@ while True:
             print(eng["a"] + eng["d"] + text + eng["e"])
     elif switch == "gc":
         import getpass
-        print("#Enter text.")
+        print("#Enter text, m for main.")
         while True:
             text = getpass.getpass("")
             if text == "m":
@@ -120,7 +120,7 @@ while True:
             print(eng["o"] + eng["l"] +  v7  +  eng["n"] + eng["m"] + eng["n"] + v7 + "\n")
     elif switch == "i":
         while True:    
-            print("#Enter name of if statement.")
+            print("#Enter name of if statement, m for main.")
             text = input("#")
             if text == "m":
                 break
