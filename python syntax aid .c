@@ -69,7 +69,7 @@ int main(){
      char v [2000]; char v1 [2000]; char v2 [2000]; char v3 [2000]; char v4[2000]; char v5[2000]; char v6 [2000]; char v7 [2000];
 	
  while (1){
- printf("#Enter a class m for main. ");
+ printf("#Enter a class, m for main. ");
  fgets(text,2000,stdin);
  text[strcspn(text,"\n")]=0;
  if (strcmp(text,"m")==0){
@@ -121,7 +121,7 @@ char f [5] [12] = {"if ", " == ", ":","    print(\"", "\")"};
  char ts [2000];
  char t [2000];
  while (1){
- printf("#Enter name of if statement. ");
+ printf("#Enter name of if statement, m for main. ");
  fgets(text,2000,stdin);
  text[strcspn(text,"\n")]=0;
  if (strcmp(text,"m")==0){
@@ -149,7 +149,7 @@ char f [5] [12] = {"elif ", " == ", ":","    print(\"", "\")"};
  char ts [2000];
  char t [2000];
  while (1){
- printf("#Enter name of elif statement. ");
+ printf("#Enter name of elif statement, m for main. ");
  fgets(text,2000,stdin);
  text[strcspn(text,"\n")]=0;
  if (strcmp(text,"m")==0){
@@ -177,7 +177,7 @@ char f [5] [12] = {"elif ", " == ", ":","    print(\"", "\")"};
     char v [2000];
 
  while (1){
- printf("#Enter a name for your variable.\n");
+ printf("#Enter a name for your variable, m for main.\n");
  printf("#");
  fgets(n,2000,stdin);
  n[strcspn(n,"\n")]=0;
