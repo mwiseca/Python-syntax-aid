@@ -126,7 +126,7 @@ char f [5] [12] = {"if ", " == ", ":","    print(\"", "\")"};
  text[strcspn(text,"\n")]=0;
  if (strcmp(text,"m")==0){
  break;}
- printf("#Enter a value. Add quotes if its a string. ");
+ printf("#Enter a value. Add quotes if it's a string. ");
  fgets(te,2000,stdin);
  te[strcspn(te,"\n")]=0;
  printf("#Enter s to make the next line a string with print function. Enter for other. ");
@@ -154,7 +154,7 @@ char f [5] [12] = {"elif ", " == ", ":","    print(\"", "\")"};
  text[strcspn(text,"\n")]=0;
  if (strcmp(text,"m")==0){
  break;}
- printf("#Enter a value. Add quotes if its a string. ");
+ printf("#Enter a value. Add quotes if it's a string. ");
  fgets(te,2000,stdin);
  te[strcspn(te,"\n")]=0;
  printf("#Enter s to make the next line a string with print function. Enter for other. ");
