@@ -140,7 +140,7 @@ while True:
             text = input("#")
             if text == "m":
                 break
-            te = input("#Enter a value. Add quotes if it's a string.")
+            te = input("#Enter a value. Add quotes if it's a string. ")
             ts = input("#Enter s make the next line a string with print function. Enter for other. ")
             t = input("#Enter the second line. ")
             print("\n" + eng["t"] + text + eng["q"] +te + eng["r"])
