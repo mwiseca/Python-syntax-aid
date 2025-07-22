@@ -108,39 +108,45 @@ def classes():
 
 
 def if_statement():
-    c = ["if "," == ",":","    ","print",'("','")']
+    c = ["if "," == ",":","    ","print",'("','")','"']
     while True:
         print("#Enter name of if statement, m for main.")
         text = input("#")
         if text == "m":
             break
-        te = input("#Enter a value. Add quotes if it's a string. ")
+        te = input("#Enter a value. ")
+        quotes = input("Enter s if the value is a string.\n");
         ts = input("#Enter s to make the next line a string with print function. Enter for other. ")
         t = input("#Enter the second line. ")
-        print("\n" + c[0] + text + c[1] + te + c[2])
+        if quotes != "s":
+            print("\n" + c[0] + text + c[1] + te + c[2])
+        elif quotes == "s":
+            print("\n" + c[0] + text + c[1] +c [7] + te +c[7] + c[2])
         if ts == "s":
             print(c[3] + c[4] + c[5] + t  + c[6])
             print(" ")
-            break
         else:
             print(c[3] + t + "\n")
 
 
 def elif_statement():
-    c = ["elif "," == ",":","    ","print",'("','")']
+    c = ["elif "," == ",":","    ","print",'("','")','"']
     while True:    
         print("#Enter name, m for main.")
         text = input("#")
         if text == "m":
             break
-        te = input("#Enter a value. Add quotes if it's a string. ")
+        te = input("#Enter a value ")
+        quotes = input("Enter s if the value is a string.\n");
         ts = input("#Enter s make the next line a string with print function. Enter for other. ")
         t = input("#Enter the second line. ")
-        print("\n" + c[0] + text + c[1] +te + c[2])
+        if quotes != "s":
+            print("\n" + c[0] + text + c[1] + te + c[2])
+        elif quotes == "s":
+            print("\n" + c[0] + text + c[1] +c [7] + te +c[7] + c[2])
         if ts == "s":
             print(c[3] + c[4] + c[5] + t  + c[6])
             print(" ")
-            break
         else:
             print(c[3] + t + "\n")
 
