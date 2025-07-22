@@ -124,14 +124,17 @@ while True:
             text = input("#")
             if text == "m":
                 break
-            te = input("#Enter a value. Add quotes if it's a string. ")
+            te = input("#Enter a value. ")
+            quotes = input("Enter s if the value is a string.\n")
             ts = input("#Enter s to make the next line a string with print function. Enter for other. ")
             t = input("#Enter the second line. ")
-            print("\n" + eng["p"] + text + eng["q"] + te + eng["r"])
+            if quotes != "s":
+                print("\n" + eng["p"] + text + eng["q"] + te + eng["r"])
+            elif quotes == "s":
+               print("\n" + eng["p"] + text + eng["q"] + eng["v"] + te + eng["v"] + eng["r"]) 
             if ts == "s":
                 print(eng["s"] + eng["a"] + eng["d"] + t  + eng["e"])
                 print(" ")
-                break
             else:
                 print(eng["s"] + t + "\n")
     elif switch == "e":
@@ -140,14 +143,17 @@ while True:
             text = input("#")
             if text == "m":
                 break
-            te = input("#Enter a value. Add quotes if it's a string. ")
+            te = input("#Enter a value. ")
+            quotes = input("Enter s if the value is a string.\n")
             ts = input("#Enter s make the next line a string with print function. Enter for other. ")
             t = input("#Enter the second line. ")
-            print("\n" + eng["t"] + text + eng["q"] +te + eng["r"])
+            if quotes != "s":
+                print("\n" + eng["t"] + text + eng["q"] +te + eng["r"])
+            elif quotes == "s":
+                print("\n" + eng["t"] + text + eng["q"] + eng["v"] + te + eng["v"] + eng["r"]) 
             if ts == "s":
                 print(eng["s"] + eng["a"] + eng["d"] + t  + eng["e"])
-                print(" ")
-                break
+                print(" ")  
             else:
                 print(eng["s"] + t + "\n")
     elif switch == "v":
