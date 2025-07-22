@@ -186,7 +186,7 @@ int main() {
                 printf("#Enter the second line. ");
                 fgets(t, 2000, stdin);
                 t[strcspn(t, "\n")] = 0;
-                if strcmp(quotes,"s")!= 0) {
+                if (strcmp(quotes,"s")!= 0) {
                     printf("\n%s%s%s%s%s\n", f[0], text, f[1], te, f[2]);
                 } else if (strcmp(quotes,"s")==0) {
                     printf("\n%s%s%s%s%s%s%s\n", f[0], text, f[1], f[5],te,f[5], f[2]);
