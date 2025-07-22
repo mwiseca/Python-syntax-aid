@@ -149,8 +149,9 @@ int main() {
                 printf("#Enter the second line. ");
                 fgets(t, 2000, stdin);
                 t[strcspn(t, "\n")] = 0;
-                printf("\n%s%s%s%s%s\n", f[0], text, f[1], te, f[2]);
-                 if (strcmp(quotes,"s")==0){
+                if (strcmp(quotes, "s")!= 0) {
+                    printf("\n%s%s%s%s%s\n", f[0], text, f[1], te, f[2]);
+                }else if (strcmp(quotes,"s")==0){
                     printf("\n%s%s%s%s%s%s%s\n", f[0], text, f[1], f[5],te,f[5], f[2]);
                 }
                 if (strcmp(ts, "s") == 0) {
@@ -160,9 +161,10 @@ int main() {
                 }
             }
         } else if (strcmp(sw, "e") == 0) {
-            char f[5][12] = {"elif ", " == ", ":", "    print(\"", "\")"};
+            char f[6][12] = {"elif ", " == ", ":", "    print(\"", "\")","\""};
             char text[2000];
             char te[2000];
+            char quotes[2000];
             char ts[2000];
             char t[2000];
             while (1) {
@@ -172,16 +174,23 @@ int main() {
                 if (strcmp(text, "m") == 0) {
                     break;
                 }
-                printf("#Enter a value. Add quotes if it's a string. ");
+                printf("#Enter a value. ");
                 fgets(te, 2000, stdin);
                 te[strcspn(te, "\n")] = 0;
+                printf("#Press s if the value is a string press enter if not.\n");
+                fgets(quotes,2000,stdin);
+                quotes[strcspn(quotes,"\n")]=0;
                 printf("#Enter s to make the next line a string with print function. Enter for other. ");
                 fgets(ts, 2000, stdin);
                 ts[strcspn(ts, "\n")] = 0;
                 printf("#Enter the second line. ");
                 fgets(t, 2000, stdin);
                 t[strcspn(t, "\n")] = 0;
-                printf("\n%s%s%s%s%s\n", f[0], text, f[1], te, f[2]);
+                if strcmp(quotes,"s")!= 0) {
+                    printf("\n%s%s%s%s%s\n", f[0], text, f[1], te, f[2]);
+                } else if (strcmp(quotes,"s")==0) {
+                    printf("\n%s%s%s%s%s%s%s\n", f[0], text, f[1], f[5],te,f[5], f[2]);
+                }   
                 if (strcmp(ts, "s") == 0) {
                     printf("%s%s%s\n\n", f[3], t, f[4]);
                 } else {
