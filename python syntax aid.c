@@ -92,7 +92,7 @@ int main() {
 
             while (1) {
                 printf("#Enter a class, m for main. ");
-                while(fgets(text, 2000, stdin) == NULL) {
+                while(fgets(text, SIZE, stdin) == NULL) {
                       checkInput();
                 }    
                 text[strcspn(text, "\n")] = 0;
@@ -101,48 +101,48 @@ int main() {
                 }
                 printf("#List attributes with a comma separating each one.\n");
                 printf("#");
-                while(fgets(te, 2000, stdin) == NULL) {
+                while(fgets(te, SIZE, stdin) == NULL) {
                     checkInput();
                 }  
                 te[strcspn(te, "\n")] = 0;
                 printf("#Assign values. Press enter after each one.\n");
                 printf("#");
-                while(fgets(v, 2000, stdin) == NULL) {
+                while(fgets(v, SIZE, stdin) == NULL) {
                     checkInput();
                 }  
                 v[strcspn(v, "\n")] = 0;
                 printf("#");
-                while(fgets(v1, 2000, stdin) == NULL) {
+                while(fgets(v1, SIZE, stdin) == NULL) {
                     checkInput();
                 }  
                 v1[strcspn(v1, "\n")] = 0;
                 printf("#");
-                while(fgets(v2, 2000, stdin) == NULL) {
+                while(fgets(v2, SIZE, stdin) == NULL) {
                     checkInput();
                 }  
                 v2[strcspn(v2, "\n")] = 0;
                 printf("#");
-                while(fgets(v3, 2000, stdin) == NULL) {
+                while(fgets(v3, SIZE, stdin) == NULL) {
                     checkInput();
                 }  
                 v3[strcspn(v3, "\n")] = 0;
                 printf("#");
-                while(fgets(v4, 2000, stdin) == NULL) {
+                while(fgets(v4, SIZE, stdin) == NULL) {
                     checkInput();
                 }  
                 v4[strcspn(v4, "\n")] = 0;
                 printf("#");
-                while(fgets(v5, 2000, stdin) == NULL) {
+                while(fgets(v5, SIZE, stdin) == NULL) {
                     checkInput();
                 }  
                 v5[strcspn(v5, "\n")] = 0;
                 printf("#");
-                while(fgets(v6, 2000, stdin) == NULL) {
+                while(fgets(v6, SIZE, stdin) == NULL) {
                     checkInput();
                 }  
                 v6[strcspn(v6, "\n")] = 0;
                 printf("#");
-                while(fgets(v7, 2000, stdin) == NULL) {
+                while(fgets(v7, SIZE, stdin) == NULL) {
                     checkInput();
                 }  
                 v7[strcspn(v7, "\n")] = 0;
