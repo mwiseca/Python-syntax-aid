@@ -36,7 +36,7 @@ int main() {
             printf("#Enter your string, m for main.\n");
             while (1) {
                 printf("#");
-                while(fgets(text, 2000, stdin) == NULL) {
+                while(fgets(text, SIZE, stdin) == NULL) {
                     checkInput(); 
                 }     
                 text[strcspn(textSIZE, "\n")] = 0;
