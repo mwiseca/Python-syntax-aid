@@ -39,7 +39,7 @@ int main() {
                 while(fgets(text, SIZE, stdin) == NULL) {
                     checkInput(); 
                 }     
-                text[strcspn(textSIZE, "\n")] = 0;
+                text[strcspn(text, "\n")] = 0;
                 if (strcmp(text, "m") == 0) {
                     break;
                 }
@@ -237,6 +237,8 @@ int main() {
                 ts[strcspn(ts, "\n")] = 0;
                 printf("#Enter the second line. ");
                 while(fgets(t, SIZE, stdin) == NULL) {
+                         checkInput();
+                }     
                 t[strcspn(t, "\n")] = 0;
                 if (strcmp(quotes,"s")!= 0) {
                     printf("\n%s%s%s%s%s\n", f[0], text, f[1], te, f[2]);
@@ -259,6 +261,8 @@ int main() {
                 printf("#Enter a name for your variable, m for main.\n");
                 printf("#");
                 while(fgets(n, SIZE, stdin) == NULL) {
+                    checkInput();
+                }  
                 n[strcspn(n, "\n")] = 0;
                 if (strcmp(n, "m") == 0) {
                     break;
