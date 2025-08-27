@@ -3,6 +3,12 @@
 
 #include <stdio.h>
 #include <string.h>
+#define SIZE 2000
+
+void checkInput() {
+    printf("\nInvalid input Try again.\n\n");
+    clearerr(stdin);
+}
 
 void choice() {
     printf("#For strings enter a for one b for two c for three quotes. Enter x to exit.\n");
@@ -15,20 +21,24 @@ void choice() {
 
 int main() {
 
-    char sw[2000];
+    char sw[SIZE];
     choice();
     while (1) {
         printf("#Enter m for main x to exit ch for choices.\n");
         printf("#");
-        fgets(sw, 2000, stdin);
+        while(fgets(sw, SIZE, stdin) ==NULL) {
+            checkInput(); 
+        }
         sw[strcspn(sw, "\n")] = 0;
         if (strcmp(sw, "a") == 0) {
             char string[2][15] = {"print('", "')"};
-            char text[2000];
+            char text[SIZE];
             printf("#Enter your string, m for main.\n");
             while (1) {
                 printf("#");
-                fgets(text, 2000, stdin);
+                while(fgets(text, SIZE, stdin) == NULL) {
+                    checkInput(); 
+                }     
                 text[strcspn(text, "\n")] = 0;
                 if (strcmp(text, "m") == 0) {
                     break;
@@ -37,11 +47,13 @@ int main() {
             }
         } else if (strcmp(sw, "b") == 0) {
             char string[2][15] = {"print(\"", "\")"};
-            char text[2000];
+            char text[SIZE];
             printf("#Enter your string, m for main.\n");
             while (1) {
                 printf("#");
-                fgets(text, 2000, stdin);
+                while(fgets(text, SIZE, stdin) ==NULL) {
+                    checkInput(); 
+                } 
                 text[strcspn(text, "\n")] = 0;
                 if (strcmp(text, "m") == 0) {
                     break;
@@ -50,11 +62,13 @@ int main() {
             }
         } else if (strcmp(sw, "c") == 0) {
             char string[2][15] = {"print('''", "''')"};
-            char text[2000];
+            char text[SIZE];
             printf("#Enter your string, m for main.\n");
             while (1) {
                 printf("#");
-                fgets(text, 2000, stdin);
+                while(fgets(text, SIZE, stdin) == NULL) {
+                         checkInput();
+                }  
                 text[strcspn(text, "\n")] = 0;
                 if (strcmp(text, "m") == 0) {
                     break;
@@ -65,52 +79,72 @@ int main() {
             break;
         } else if (strcmp(sw, "cl") == 0) {
             char f[9][24] = {"class ", ":", "    def __init__(self,", "):", "self.", "=", " ", "        "};
-            char text[2000];
-            char te[2000];
-            char v[2000];
-            char v1[2000];
-            char v2[2000];
-            char v3[2000];
-            char v4[2000];
-            char v5[2000];
-            char v6[2000];
-            char v7[2000];
+            char text[SIZE];
+            char te[SIZE];
+            char v[SIZE];
+            char v1[SIZE];
+            char v2[SIZE];
+            char v3[SIZE];
+            char v4[SIZE];
+            char v5[SIZE];
+            char v6[SIZE];
+            char v7[SIZE];
 
             while (1) {
                 printf("#Enter a class, m for main. ");
-                fgets(text, 2000, stdin);
+                while(fgets(text, SIZE, stdin) == NULL) {
+                      checkInput();
+                }    
                 text[strcspn(text, "\n")] = 0;
                 if (strcmp(text, "m") == 0) {
                     break;
                 }
                 printf("#List attributes with a comma separating each one.\n");
                 printf("#");
-                fgets(te, 2000, stdin);
+                while(fgets(te, SIZE, stdin) == NULL) {
+                    checkInput();
+                }  
                 te[strcspn(te, "\n")] = 0;
                 printf("#Assign values. Press enter after each one.\n");
                 printf("#");
-                fgets(v, 2000, stdin);
+                while(fgets(v, SIZE, stdin) == NULL) {
+                    checkInput();
+                }  
                 v[strcspn(v, "\n")] = 0;
                 printf("#");
-                fgets(v1, 2000, stdin);
+                while(fgets(v1, SIZE, stdin) == NULL) {
+                    checkInput();
+                }  
                 v1[strcspn(v1, "\n")] = 0;
                 printf("#");
-                fgets(v2, 2000, stdin);
+                while(fgets(v2, SIZE, stdin) == NULL) {
+                    checkInput();
+                }  
                 v2[strcspn(v2, "\n")] = 0;
                 printf("#");
-                fgets(v3, 2000, stdin);
+                while(fgets(v3, SIZE, stdin) == NULL) {
+                    checkInput();
+                }  
                 v3[strcspn(v3, "\n")] = 0;
                 printf("#");
-                fgets(v4, 2000, stdin);
+                while(fgets(v4, SIZE, stdin) == NULL) {
+                    checkInput();
+                }  
                 v4[strcspn(v4, "\n")] = 0;
                 printf("#");
-                fgets(v5, 2000, stdin);
+                while(fgets(v5, SIZE, stdin) == NULL) {
+                    checkInput();
+                }  
                 v5[strcspn(v5, "\n")] = 0;
                 printf("#");
-                fgets(v6, 2000, stdin);
+                while(fgets(v6, SIZE, stdin) == NULL) {
+                    checkInput();
+                }  
                 v6[strcspn(v6, "\n")] = 0;
                 printf("#");
-                fgets(v7, 2000, stdin);
+                while(fgets(v7, SIZE, stdin) == NULL) {
+                    checkInput();
+                }  
                 v7[strcspn(v7, "\n")] = 0;
                 printf("\n%s%s%s\n", f[0], text, f[1]);
                 printf("%s%s%s\n", f[2], te, f[3]);
@@ -125,29 +159,39 @@ int main() {
             }
         } else if (strcmp(sw, "i") == 0) {
             char f[6][12] = {"if ", " == ", ":", "    print(\"", "\")","\""};
-            char text[2000];
-            char te[2000];
-            char quotes[2000];
-            char ts[2000];
-            char t[2000];
+            char text[SIZE];
+            char te[SIZE];
+            char quotes[SIZE];
+            char ts[SIZE];
+            char t[SIZE];
             while (1) {
                 printf("#Enter name of if statement, m for main. ");
-                fgets(text, 2000, stdin);
+                while(fgets(text, SIZE, stdin) == NULL) {
+                    checkInput();
+                }  
                 text[strcspn(text, "\n")] = 0;
                 if (strcmp(text, "m") == 0) {
                     break;
                 }
                 printf("#Enter a value. ");
-                fgets(te, 2000, stdin);
+                while(fgets(te, SIZE, stdin) == NULL) {
+                    checkInput();
+                }  
                 te[strcspn(te, "\n")] = 0;
                 printf("#Press s if the value is a string press enter if not.\n");
-                fgets(quotes,2000,stdin);
+                while(fgets(quotes,2000,stdin) == NULL) {
+                    checkInput();
+                }  
                 quotes[strcspn(quotes,"\n")]=0;
                 printf("#Enter s to make the next line a string with print function. Enter for other. ");
-                fgets(ts, 2000, stdin);
+                while(fgets(ts, SIZE, stdin) == NULL) {
+                    checkInput();
+                }  
                 ts[strcspn(ts, "\n")] = 0;
                 printf("#Enter the second line. ");
-                fgets(t, 2000, stdin);
+                while(fgets(t, SIZE, stdin) == NULL) {
+                    checkInput();
+                }  
                 t[strcspn(t, "\n")] = 0;
                 if (strcmp(quotes, "s")!= 0) {
                     printf("\n%s%s%s%s%s\n", f[0], text, f[1], te, f[2]);
@@ -162,29 +206,39 @@ int main() {
             }
         } else if (strcmp(sw, "e") == 0) {
             char f[6][12] = {"elif ", " == ", ":", "    print(\"", "\")","\""};
-            char text[2000];
-            char te[2000];
-            char quotes[2000];
-            char ts[2000];
-            char t[2000];
+            char text[SIZE];
+            char te[SIZE];
+            char quotes[SIZE];
+            char ts[SIZE];
+            char t[SIZE];
             while (1) {
                 printf("#Enter name of elif statement, m for main. ");
-                fgets(text, 2000, stdin);
+                while(fgets(text, SIZE, stdin) == NULL) {
+                    checkInput();
+                }  
                 text[strcspn(text, "\n")] = 0;
                 if (strcmp(text, "m") == 0) {
                     break;
                 }
                 printf("#Enter a value. ");
-                fgets(te, 2000, stdin);
+                while(fgets(te, SIZE, stdin) == NULL) {
+                    checkInput();
+                }  
                 te[strcspn(te, "\n")] = 0;
                 printf("#Press s if the value is a string press enter if not.\n");
-                fgets(quotes,2000,stdin);
+                while(fgets(quotes,SIZE,stdin) == NULL) {
+                    checkInput();
+                }  
                 quotes[strcspn(quotes,"\n")]=0;
                 printf("#Enter s to make the next line a string with print function. Enter for other. ");
-                fgets(ts, 2000, stdin);
+                while(fgets(ts, SIZE, stdin) == NULL) {
+                    checkInput();
+                }  
                 ts[strcspn(ts, "\n")] = 0;
                 printf("#Enter the second line. ");
-                fgets(t, 2000, stdin);
+                while(fgets(t, SIZE, stdin) == NULL) {
+                         checkInput();
+                }     
                 t[strcspn(t, "\n")] = 0;
                 if (strcmp(quotes,"s")!= 0) {
                     printf("\n%s%s%s%s%s\n", f[0], text, f[1], te, f[2]);
@@ -199,24 +253,30 @@ int main() {
             }
         } else if (strcmp(sw, "v") == 0) {
             char f[4][12] = {" = ", "\"", "input(\"", " \")"};
-            char n[2000];
-            char vs[2000];
-            char v[2000];
+            char n[SIZE];
+            char vs[SIZE];
+            char v[SIZE];
 
             while (1) {
                 printf("#Enter a name for your variable, m for main.\n");
                 printf("#");
-                fgets(n, 2000, stdin);
+                while(fgets(n, SIZE, stdin) == NULL) {
+                    checkInput();
+                }  
                 n[strcspn(n, "\n")] = 0;
                 if (strcmp(n, "m") == 0) {
                     break;
                 }
                 printf("#If the value is a string enter s. Enter  i for user input otherwise enter.\n");
                 printf("#");
-                fgets(vs, 2000, stdin);
+                while(fgets(vs, 2000, stdin) == NULL) {
+                    checkInput();
+                }  
                 vs[strcspn(vs, "\n")] = 0;
                 printf("#Enter a value. ");
-                fgets(v, 2000, stdin);
+                while(fgets(v, 2000, stdin) == NULL) {
+                    checkInput();
+                }  
                 v[strcspn(v, "\n")] = 0;
                 if (strcmp(vs, "s") == 0) {
                     printf("\n%s%s%s%s%s\n\n", n, f[0], f[1], v, f[1]);
