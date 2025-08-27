@@ -3,6 +3,12 @@
 
 #include <stdio.h>
 #include <string.h>
+#define SIZE 2000
+
+void checkInput() {
+    printf("\nInvalid input Try again.\n\n");
+    clearerr(stdin);
+}
 
 void choice() {
     printf("#For strings enter a for one b for two c for three quotes. Enter x to exit.\n");
@@ -15,21 +21,25 @@ void choice() {
 
 int main() {
 
-    char sw[2000];
+    char sw[SIZE];
     choice();
     while (1) {
         printf("#Enter m for main x to exit ch for choices.\n");
         printf("#");
-        fgets(sw, 2000, stdin);
+        while(fgets(sw, SIZE, stdin) ==NULL) {
+            checkInput(); 
+        }
         sw[strcspn(sw, "\n")] = 0;
         if (strcmp(sw, "a") == 0) {
             char string[2][15] = {"print('", "')"};
-            char text[2000];
+            char text[SIZE];
             printf("#Enter your string, m for main.\n");
             while (1) {
                 printf("#");
-                fgets(text, 2000, stdin);
-                text[strcspn(text, "\n")] = 0;
+                while(fgets(text, 2000, stdin) == NULL) {
+                    checkInput(); 
+                }     
+                text[strcspn(textSIZE, "\n")] = 0;
                 if (strcmp(text, "m") == 0) {
                     break;
                 }
@@ -37,11 +47,13 @@ int main() {
             }
         } else if (strcmp(sw, "b") == 0) {
             char string[2][15] = {"print(\"", "\")"};
-            char text[2000];
+            char text[SIZE];
             printf("#Enter your string, m for main.\n");
             while (1) {
                 printf("#");
-                fgets(text, 2000, stdin);
+                while(fgets(text, SIZE, stdin) ==NULL) {
+                    checkInput(); 
+                } 
                 text[strcspn(text, "\n")] = 0;
                 if (strcmp(text, "m") == 0) {
                     break;
@@ -50,11 +62,13 @@ int main() {
             }
         } else if (strcmp(sw, "c") == 0) {
             char string[2][15] = {"print('''", "''')"};
-            char text[2000];
+            char text[SIZE];
             printf("#Enter your string, m for main.\n");
             while (1) {
                 printf("#");
-                fgets(text, 2000, stdin);
+                while(fgets(text, SIZE, stdin) == NULL) {
+                         checkInput();
+                }  
                 text[strcspn(text, "\n")] = 0;
                 if (strcmp(text, "m") == 0) {
                     break;
