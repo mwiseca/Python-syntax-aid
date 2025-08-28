@@ -18,51 +18,64 @@ def string_one_quote():
     c = ["print","('","')"] 
     print("#Enter text, m for main.")
     while True:
-        text = input("#")
-        if text == "m":
-            break
-        print("\n" + c[0] + c[1] + text + c[2] + "\n")
-
+        try:
+            text = input("#")
+            if text == "m":
+                break
+            print("\n" + c[0] + c[1] + text + c[2] + "\n")
+        except EOFError:
+            print("#Invalid input.")
 
 def string_double_quote():
     c = ["print",'("','")']
     print("#Enter text, m for main.")
     while True:
-        text = input("#")
-        if text == "m":
-            break
-        print("\n" + c[0] + c[1] + text + c[2] + "\n")
-
+        try:
+            text = input("#")
+            if text == "m":
+                break
+            print("\n" + c[0] + c[1] + text + c[2] + "\n")
+        except EOFError:
+            print("#Invalid input.")
+    
 
 def string_triple_quote():
     c = ["print","('''","''')"]
     print("#Enter text, m for main.")
     while True:
-        text = input("#")
-        if text == "m":
-            break
-        print("\n" + c[0] + c[1] + text + c[2] + "\n")
-
+        try:
+            text = input("#")
+            if text == "m":
+                break
+            print("\n" + c[0] + c[1] + text + c[2] + "\n")
+        except EOFError:
+            print("#Invalid input.")
 
 def hide_text_one():
     c = ["print","('","')",]
     import getpass
     print("#Enter text, m for main.")
     while True:
-        text = getpass.getpass("")
-        if text == "m":
-            break
-        print(c[0] +  c[1]  +  text +  c[2])
+        try:
+            text = getpass.getpass("")
+            if text == "m":
+                break
+            print(c[0] +  c[1]  +  text +  c[2])
+        except EOFError:
+            print("#Invalid input.")
 
 def hide_text_double():
     c = ["print",'("','")']
     import getpass
     print("#Enter text, m for main.")
     while True:
-        text = getpass.getpass("")
-        if text == "m":
-            break
-        print(c[0] + c[1] + text + c[2])
+        try:
+            text = getpass.getpass("")
+            if text == "m":
+                break
+            print(c[0] + c[1] + text + c[2])
+        except EOFError:
+            print("#Invalid input.")
 
 
 def hide_text_triple():
@@ -70,10 +83,13 @@ def hide_text_triple():
     import getpass
     print("#Enter text, m for main.")
     while True:
-        text = getpass.getpass("")
-        if text == "m":
-            break
-        print(c[0] + c[1] + text + c[2])
+        try:
+            text = getpass.getpass("")
+            if text == "m":
+                break
+            print(c[0] + c[1] + text + c[2])
+        except EOFError:
+            print("#Invalid input.")
 
 def classes():
     while True:
@@ -207,6 +223,8 @@ while True:
         (functions[switch]())
     except KeyError:
         print("#Enter a selection from choices.\n")
+    except EOFError:
+        print("#Invalid input.")
 
 
 
