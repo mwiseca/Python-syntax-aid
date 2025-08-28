@@ -24,7 +24,7 @@ def string_one_quote():
                 break
             print("\n" + c[0] + c[1] + text + c[2] + "\n")
         except EOFError:
-            print("#Invalid input.")
+            print("Invalid input.")
 
 def string_double_quote():
     c = ["print",'("','")']
@@ -36,7 +36,7 @@ def string_double_quote():
                 break
             print("\n" + c[0] + c[1] + text + c[2] + "\n")
         except EOFError:
-            print("#Invalid input.")
+            print("Invalid input.")
     
 
 def string_triple_quote():
@@ -49,7 +49,7 @@ def string_triple_quote():
                 break
             print("\n" + c[0] + c[1] + text + c[2] + "\n")
         except EOFError:
-            print("#Invalid input.")
+            print("Invalid input.")
 
 def hide_text_one():
     c = ["print","('","')",]
@@ -62,7 +62,7 @@ def hide_text_one():
                 break
             print(c[0] +  c[1]  +  text +  c[2])
         except EOFError:
-            print("#Invalid input.")
+            print("Invalid input.")
 
 def hide_text_double():
     c = ["print",'("','")']
@@ -75,7 +75,7 @@ def hide_text_double():
                 break
             print(c[0] + c[1] + text + c[2])
         except EOFError:
-            print("#Invalid input.")
+            print("Invalid input.")
 
 
 def hide_text_triple():
@@ -89,7 +89,7 @@ def hide_text_triple():
                 break
             print(c[0] + c[1] + text + c[2])
         except EOFError:
-            print("#Invalid input.")
+            print("Invalid input.")
 
 def classes():
     while True:
@@ -224,7 +224,7 @@ while True:
     except KeyError:
         print("#Enter a selection from choices.\n")
     except EOFError:
-        print("#Invalid input.")
+        print("Invalid input.")
 
 
 
