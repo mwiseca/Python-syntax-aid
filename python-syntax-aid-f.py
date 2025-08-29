@@ -118,7 +118,7 @@ def classes():
             print(c[4] + c[5] +  v1  +  c[6] + c[7] + c[6] + v1)
             print(c[4] + c[5] +  v2  +  c[6] + c[7] + c[6] + v2)
             print(c[4] + c[5] +  v3  +  c[6] + c[7] + c[6] + v3)
-           print(c[4] + c[5] +  v4  +  c[6] + c[7] + c[6] + v4)    
+            print(c[4] + c[5] +  v4  +  c[6] + c[7] + c[6] + v4)    
             print(c[4] + c[5] +  v5  +  c[6] + c[7] + c[6] + v5)
             print(c[4] + c[5] +  v6  +  c[6] + c[7] + c[6] + v6)
             print(c[4] + c[5] +  v7  +  c[6] + c[7] + c[6] + v7 + "\n")
