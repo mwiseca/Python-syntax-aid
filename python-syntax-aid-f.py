@@ -134,7 +134,7 @@ def if_statement():
             text = input("#")
             if text == "m":
                 break
-            te = input("#Enter a value. ")
+            te = input("#Enter a value.\n")
             quotes = input("Enter s if the value is a string.\n");
             ts = input("#Enter s to make the next line a string with print function. Enter for other. ")
             t = input("#Enter the second line. ")
@@ -158,7 +158,7 @@ def elif_statement():
             text = input("#")
             if text == "m":
                 break
-            te = input("#Enter a value ")
+            te = input("#Enter a value.\n")
             quotes = input("Enter s if the value is a string.\n");
             ts = input("#Enter s make the next line a string with print function. Enter for other. ")
             t = input("#Enter the second line. ")
