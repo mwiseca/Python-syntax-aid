@@ -45,3 +45,7 @@ Added a #define SIZE 2000  and 2000 was changed to SIZE to all variables and use
 it easy to change bounds limits.
 All fgets were put into while loops to check for ctrl + d and other errors.
 August 27 2025.
+
+Added try except EOFError to python-syntax-aid-f.py.
+August 30 2025.
+
