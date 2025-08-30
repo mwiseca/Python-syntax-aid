@@ -136,8 +136,8 @@ def if_statement():
                 break
             te = input("#Enter a value.\n")
             quotes = input("Enter s if the value is a string.\n");
-            ts = input("#Enter s to make the next line a string with print function. Enter for other. ")
-            t = input("#Enter the second line. ")
+            ts = input("#Enter s to make the next line a string with print function. Enter for other.\n")
+            t = input("#Enter the second line.\n")
             if quotes != "s":
                 print("\n" + c[0] + text + c[1] + te + c[2])
             elif quotes == "s":
@@ -160,8 +160,8 @@ def elif_statement():
                 break
             te = input("#Enter a value.\n")
             quotes = input("Enter s if the value is a string.\n");
-            ts = input("#Enter s make the next line a string with print function. Enter for other. ")
-            t = input("#Enter the second line. ")
+            ts = input("#Enter s make the next line a string with print function. Enter for other.\n")
+            t = input("#Enter the second line.\n")
             if quotes != "s":
                 print("\n" + c[0] + text + c[1] + te + c[2])
             elif quotes == "s":
@@ -183,9 +183,9 @@ def variable():
             n = input("#")
             if n == "m":
                 break
-            print("#If the value is a string enter s. Enter  i for user input otherwise enter. ")
+            print("#If the value is a string enter s. Enter  i for user input otherwise enter.")
             vs = input("#")
-            v = input("#Enter a value or user prompt if i is selected. ")
+            v = input("#Enter a value or user prompt if i is selected.\n")
             if vs == "s":
                 print("\n" + n + c[0] + c[1] + v + c[1] + "\n")
             elif vs == "i":
