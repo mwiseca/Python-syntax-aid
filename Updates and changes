@@ -49,6 +49,7 @@ August 27 2025.
 Added try except EOFError to python-syntax-aid-f.py.
 August 30 2025.
 python syntax aid.c was changed. The if else statement to change options was changed to a struct.
-Classes was automated so users wont have to put commas in leading to errors.
+Classes was automated to reduce the possibility of errors.
+July 12 2026.
 
 
