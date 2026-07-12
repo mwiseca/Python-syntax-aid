@@ -168,7 +168,7 @@ void ifStatement() {
             checkInput();
         }  
         ts[strcspn(ts, "\n")] = 0;
-        if(strlen(ts >= MAX) {
+        if(strlen(ts) >= MAX) {
             clean();
         }
         printf("#Enter the second line. ");
@@ -176,7 +176,7 @@ void ifStatement() {
             checkInput();
         }  
         t[strcspn(t, "\n")] = 0;
-        if(strlen)t >= MAX) {
+        if(strlen(t) >= MAX) {
             clean();
         }
         if (strcmp(quotes, "s")!= 0) {
