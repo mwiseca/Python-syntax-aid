@@ -64,6 +64,9 @@ void stringTriple() {
             checkInput();
         }  
         text[strcspn(text, "\n")] = 0;
+        if(strlen(text) >= MAX) {
+            clean();
+        }
         if (strcmp(text, "m") == 0) {
             break;
         }
