@@ -141,6 +141,9 @@ void ifStatement() {
             checkInput();
         }  
         text[strcspn(text, "\n")] = 0;
+        if(strlen(text) >= MAX) {
+            clean();
+        }
         if (strcmp(text, "m") == 0) {
             break;
         }
@@ -149,21 +152,33 @@ void ifStatement() {
             checkInput();
         }  
         te[strcspn(te, "\n")] = 0;
+        if(strlen(te) >= MAX) {
+            clean();
+        }
         printf("#Press s if the value is a string press enter if not.\n");
         while(fgets(quotes,SIZE,stdin) == NULL) {
             checkInput();
         }  
         quotes[strcspn(quotes,"\n")]=0;
+        if(strlen(quotes) >= MAX) {
+            clean();
+        }
         printf("#Enter s to make the next line a string with print function. Enter for other. ");
         while(fgets(ts, SIZE, stdin) == NULL) {
             checkInput();
         }  
         ts[strcspn(ts, "\n")] = 0;
+        if(strlen(ts >= MAX) {
+            clean();
+        }
         printf("#Enter the second line. ");
         while(fgets(t, SIZE, stdin) == NULL) {
             checkInput();
         }  
         t[strcspn(t, "\n")] = 0;
+        if(strlen)t >= MAX) {
+            clean();
+        }
         if (strcmp(quotes, "s")!= 0) {
             printf("\n%s%s%s%s%s\n", f[0], text, f[1], te, f[2]);
         }else if (strcmp(quotes,"s")==0){
@@ -190,6 +205,9 @@ void elIf () {
             checkInput();
         }  
         text[strcspn(text, "\n")] = 0;
+        if(strlen(text) >= MAX) {
+            clean();
+        }
         if (strcmp(text, "m") == 0) {
             break;
         }
@@ -198,21 +216,33 @@ void elIf () {
             checkInput();
         }  
         te[strcspn(te, "\n")] = 0;
+        if(strlen(te) >= MAX) {
+            clean();
+        }
         printf("#Press s if the value is a string press enter if not.\n");
         while(fgets(quotes,SIZE,stdin) == NULL) {
             checkInput();
         }  
         quotes[strcspn(quotes,"\n")]=0;
+        if(strlen(quotes) >= MAX) {
+            clean();
+        }
         printf("#Enter s to make the next line a string with print function. Enter for other. ");
         while(fgets(ts, SIZE, stdin) == NULL) {
             checkInput();
         }  
         ts[strcspn(ts, "\n")] = 0;
+        if(strlen(ts) >= MAX) {
+            clean();
+        }
         printf("#Enter the second line. ");
         while(fgets(t, SIZE, stdin) == NULL) {
             checkInput();
         }     
         t[strcspn(t, "\n")] = 0;
+        if(strlen(t) >= MAX) {
+            clean();
+        }
         if (strcmp(quotes,"s")!= 0) {
             printf("\n%s%s%s%s%s\n", f[0], text, f[1], te, f[2]);
         } else if (strcmp(quotes,"s")==0) {
@@ -239,6 +269,9 @@ void variable() {
             checkInput();
         }  
         n[strcspn(n, "\n")] = 0;
+        if(strlen(n) >= MAX) {
+            clean();
+        }
         if (strcmp(n, "m") == 0) {
             break;
         }
@@ -248,11 +281,17 @@ void variable() {
             checkInput();
         }  
         vs[strcspn(vs, "\n")] = 0;
+        if(strlen(vs) >= MAX) {
+            clean();
+        }
         printf("#Enter a value. ");
         while(fgets(v, SIZE, stdin) == NULL) {
             checkInput();
         }  
         v[strcspn(v, "\n")] = 0;
+        if(strlen(v) >= MAX) {
+            clean();
+        }
         if (strcmp(vs, "s") == 0) {
             printf("\n%s%s%s%s%s\n\n", n, f[0], f[1], v, f[1]);
         } else if (strcmp(vs, "i") == 0) {
