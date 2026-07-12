@@ -12,7 +12,6 @@
 
 //const int SIZE = 100;
 //const int MAX = 99;
-char repeat[100];
 
 void clean(){
     int clear;
@@ -341,14 +340,6 @@ int main() {
     printf("\n          copyright 2023-2026 Mitchell E Wise\n");
     printf("          SPDX-License-Identifier: Apache-20\n\n\n");
 
-    printf("//Enter r to repeat choices enter to not.\n");
-    while(fgets(repeat,SIZE, stdin) == NULL) {
-        checkInput();
-    }
-    repeat[strcspn(repeat, "\n")] = 0;
-    if (strlen(repeat) >= MAX) {
-        clean();
-    }
     choice();
     while (1) {
         printf("//Enter a selection from choices x to exit ch for choices.\n");
